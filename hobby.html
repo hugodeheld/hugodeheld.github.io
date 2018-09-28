@@ -1,41 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hobby</title>
-  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+    <title>Hugo Dijkstra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous" />
 </head>
 
 <body>
-  <div class="Menu">
-    <ul>
-      <li>
-        <a href="">
-                  <p>Home</p>
-                </a>
-      </li>
-      <li>
-        <a href="">
-                  <p>Hobbies</p>
-                </a>
-      </li>
-      <li>
-        <a href="">
-                  <p>Contact</p>
-                </a>
-      </li>
-    </ul>
-  </div>
-  <div class="Container">
-    <h1>
-      Mijn Hobbies
-    </h1>
-    <h2>Boogschieten</h2>
-    <img class="BowImage" src="Images/Bow.jpg"/>
-    <p></p>
-  </div>
+    <nav class="navbar fixed-top navbar-expand-sm|md|lg|-xl navbar-dark bg-dark" style="justify-content:space-between">
+        <a class="navbar-brand" href="#">Hugo Dijkstra</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" style="float:right">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#header">
+                  Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#programming">Programming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#archery">Archery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#longboarding">Longboarding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobby.html">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:70px">
+        <div id="about">
+            <div class="card-columns">
+                <div id="programming" class="card text-white">
+                    <img class="card-image-top" src="Images/Code.png" style="width: 100%;" />
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Programming</h5>
+                        <p class="card-text">I have been programming since 2012, Since then I have tought myself C#. In 2015 I started an MBO in Gamedevelopment that I finished in 2018. In those years I learned C++ and a bit of Java</p>
+                        <a href="https://github.com/hugodeheld" class="btn btn-primary">My Github</a>
+                    </div>
+                </div>
+                <div id="archery" class="card text-white">
+                    <img alt="" src="images/Bow.jpg" class="card-image-top" style="width: 100%;" />
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Archery</h5>
+                        <p class="card-text">I've been doing archery since 2013, Since then I have bought two bows.</p>
+                    </div>
+                </div>
+                <div id="longboarding" class="card text-white">
+                    <img src="images/Longboard.jpg" class="card-image-top" style="width: 100%;" />
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Longboarding</h5>
+                        <p class="card-text">I have been longboarding for over 2 years. When its not raining I ride my longboard everywhere I need to go.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <footer style="display: inline;">
+        <p style="float: left;">©Hugo Dijkstra 2018</p>
+        <p style="float: right;">Email: hugodijkstra@live.nl</p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<link rel="stylesheet" type="text/css" href="style.css">
+				<title>To-Do list</title>
+				<script>
+        $(document).ready(
+        function(){
+            $('#button').click(
+                function(){
+                    var toAdd = $('input[name=ListItem]').val();
+                     $('#sortable').append('<li>' + toAdd + '</li>');
+                });
+
+               $("input[name=ListItem]").keyup(function(event){
+                  if(event.keyCode == 13){
+                    $("#button").click();
+                  }
+              });
+
+              $(document).on('dblclick','li', function(){
+                $(this).toggleClass('strike').fadeOut('slow');
+              });
+
+              $('input').focus(function() {
+                $(this).val('');
+              });
+
+                  $( "#sortable" ).sortable();
+                    $( "#sortable" ).disableSelection();
+            }
+        );
+    
+				</script>
+			</head>
+			<body>
+				<div class="container">
+					<h2>ToDo List</h2>
+					<p>
+						<em>Drag to reorder elements, Double click to remove</em>
+					</p>
+					<form name="toDoList">
+						<input type="text" name="ListItem"/>
+					</form>
+					<div id="button">Add</div>
+					<br/>
+					<ol id="sortable"></ol>
+				</div>
+			</body>
+		</html>
